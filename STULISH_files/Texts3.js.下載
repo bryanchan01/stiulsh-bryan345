@@ -1,0 +1,51 @@
+var font = "'Microsoft YaHei', 微软雅黑, STXihei, 华文细黑, sans-serif";
+
+var againText  = "再試一次";
+
+var icoText    = 3;
+
+var tpText1    = "擊沉敵人！";
+
+var tpText2_1  = "打得漂亮！";
+var tpText2_2  = "現在正是時候加入真正的戰鬥！";
+
+var tpText3_1  = "敵人未被擊毀";
+var tpText3_2  = "何不提升您的技巧？";
+
+////////////////////////////////////////////////////
+//
+function drawIcoText(ctx)
+{
+	ctx.font = 'bold 12pt '+ font;	
+	ctx.textBaseline = "middle";
+	ctx.textAlign = "center";
+	//
+	ctx.shadowColor = "rgb(255, 255, 255)";
+	ctx.shadowBlur = 2;
+	ctx.shadowOffsetX = 0;
+	ctx.shadowOffsetY = 0;
+	//
+	ctx.fillStyle = "rgb(95, 115, 125)";
+	//
+	ctx.fillText(icoText, 28, 64);
+}
+
+//
+function drawTPText(ctx, txtNum)
+{
+	if(txtNum === 1)
+	{
+		ctx.font = '11pt ' + font;
+		ctx.fillText(tpText1, 0, 0);
+	}
+	else if(txtNum === 2)
+	{
+		ctx.font = '11pt ' + font;
+		ctx.fillText(tpText2_1 + " " + tpText2_2, 0, 0);
+	}
+	else
+	{
+		ctx.font = '11pt ' + font;
+		ctx.fillText(tpText3_1 + " " + tpText3_2, 0, 0);
+	}
+}
