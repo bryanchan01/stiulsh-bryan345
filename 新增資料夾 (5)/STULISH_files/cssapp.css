@@ -1,0 +1,36 @@
+.ui .mcontainer {
+  width: auto !important;
+  display: block;
+  max-width: 100% !important;
+  padding-top: 10px;
+}
+.xcontainer {
+  display: inline-block;
+  overflow: hidden;
+  width: 50%;
+  height: 60px;
+  clear: none;
+}
+.download-image {
+  display: inline-block;
+  max-height: 38px;
+}
+.ui-grid {
+  background-color: white;
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+  padding-top: 10px;
+}
+.panel-body {
+  padding: 5px;
+}
+.panel-profile-img {
+  max-width: 80px;
+}
+.vc_align_center {
+  text-align: center;
+}
+.vc_box_border_grey img {
+  max-width: 80%;
+}
